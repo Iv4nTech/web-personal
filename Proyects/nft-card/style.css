@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Outfit';
+    src: 
+    local('Outfit'),
+    url("Fonts/Outfit-VariableFont_wght.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /*Colores principales*/
+    --color-main: hsl(215, 51%, 70%);
+    --color-price-crypto: hsl(178, 100%, 50%);
+
+    /*Colores neutros*/
+    --color-main-bg: hsl(217, 54%, 11%);
+    --color-card-bg: hsl(216, 50%, 16%);
+    --color-line: hsl(215, 32%, 27%);
+    --color-tittle: hsl(0, 0%, 100%);
+
+    /*Fuentes*/
+    --font-main: 'Outfit'
+}
+
+body {
+    font-family: var(--font-main);
+}
+
+.container-cards {
+    background-color: var(--color-main-bg);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 24%;
+    background-color: var(--color-card-bg);
+    padding: 30px;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.card .tittle-description {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+}
+
+.card .tittle-description p {
+    color: var(--color-main);
+    width: 100%;
+    font-size: 20px;
+}
+
+.card h1 {
+    color: var(--color-tittle);
+}
+
+.card img {
+    border-radius: 10px;
+    
+}
+
+.price-time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-time span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+
+.price-time span:first-child{
+    color: var(--color-price-crypto);
+}
+
+.price-time span:last-child{
+    color: var(--color-main);
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid var(--color-main);
+    padding-top: 20px;
+    gap: 20px;
+    color: var(--color-main);
+}
+
+.creator img {
+    width: 35px;
+    border: 2px solid var(--color-tittle);
+    border-radius: 100%;
+}
+
+.attribution {
+    color: var(--color-main);
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--color-main);
+    font-weight: bold;
+}
+
+
