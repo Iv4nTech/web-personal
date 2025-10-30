@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: 'Poppins';
+    font-weight: 200;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: 20px;
+    padding: 10px;
+    justify-items: center;
+    align-content: center;
+    height: 100vh;
+    background-color: aliceblue;
+    
+    
+}
+
+.items {
+    display: flex;
+    flex-flow: column wrap;
+    width: 65%;
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px -10px;
+    min-width: 300px;
+    max-width: 100%;
+
+
+}
+
+.icons {
+    align-self: flex-end;
+}
+
+
+.container > :nth-child(2) {
+    border-top: 4px solid rgb(0, 132, 255);
+
+    
+}
+
+.container > :nth-child(3) {
+    border-top: 4px solid rgb(255, 187, 0);
+    
+ 
+}
+
+.container > :nth-child(4) {
+    border-top: 4px solid rgb(0, 224, 224);
+
+    
+}
+
+.container > :first-child {
+    border-top: 4px solid rgb(255, 98, 98);
+   
+    
+}
+
+@media (width > 1000px) {
+    .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.items {
+    width: 70%;
+}
+
+.container > :first-child, .container > :nth-child(3) {
+    grid-row: 2 span;
+    align-self: center;
+    height: fit-content;
+
+}
+
+.container > :first-child {
+
+    justify-self: end;
+}
+
+.container > :nth-child(3) {
+
+    justify-self: start;
+}
+
+.container > :nth-child(2) {
+    order: ;
+
+    
+}
+
+.container > :nth-child(4) {
+
+    
+}
+
+.container > :nth-child(1) {
+
+    order: 1;
+    
+}
+
+.container > :nth-child(3) {
+
+    
+}
+
+}
+
