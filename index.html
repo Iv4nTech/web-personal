@@ -3,71 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Portfolio - Iván Gómez</title>
+    <link rel="stylesheet" href="Home Page/style.css">
 </head>
 <body>
-    <div class="title-description">
-        <h1>Proyectos</h1>
-        <p>Estos son todos los proyectos que he realizado que están completados usando tegnologías como HTML, CSS y JS...</p>
-    </div>
-    <div class="container-cards">
-        <div class="card">
-            <div class="image">
-                <img src="Proyects/image/nft-preview.png" alt="Capture screen of proyect">
-            </div>
-            <div class="content">
-                <h1>NFT Card</h1>
-                <h2>HTML, CSS</h2>
-                <p>Un componente para una web que muestra la carta de un NFT</p>
-            </div>
-            <div class="action">
-                <a href="Proyects/nft-card/index.html"><h3>Ver</h3><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
+    <nav>
+        <div class="icon">
+            <a href="">
+            Iván Gómez
+            </a>
         </div>
-         <div class="card">
-            <div class="image">
-                <img src="Proyects/image/grid_web-preview.png" alt="Capture screen of proyect">
-            </div>
-            <div class="content">
-                <h1>Grid layaut</h1>
-                <h2>HTML, CSS</h2>
-                <p>Layaut realizado con grid, que dentro tiene una tarjetas también hechas con grid</p>
-            </div>
-            <div class="action">
-                <a href="Proyects/web-grid/index.html"><h3>Ver</h3><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
+        <div class="elements">
+            <ul>
+                <li><a href="">Sobre mí</a></li>
+                <li><a href="">Proyectos</a></li>
+                <li><a href="">Tecnologías</a></li>
+            </ul>
         </div>
-          <div class="card">
-            <div class="image">
-                <img src="Proyects/image/grid_web-preview.png" alt="Capture screen of proyect">
+    </nav>
+    <main>
+        <section class="container-presentation">
+            <article class="presentation">
+                <div class="content">
+                <h1>Hola, soy Iván Gómez.<strong>Desarrollador de aplicaciones web</strong></h1>
+                <p>Tengo sólidos conocimientos Full Stack, pero con una especialización y pasión por el Front-End. Mi objetivo es siempre construir experiencias de usuario sencillas e intuitivas usando HTML, CSS y JavaScript.</p>
+                </div>
+                <div class="image">
+                    <img src="Home Page/images/myface.webp" alt="Imagen de la cara de Iván Gómez">
+                </div>
+            </article>
+        </section>
+        <section class="section-proyects">
+        <h2>Proyectos realizados</h3>
+            <div class="container-cards">
+                 <article class="proyect">
+                <img src="../Proyects/image/nft-preview.png" alt="Imagen proyecto nft">
+                <h3>NFT Card</h3>
+                <p>Carta realizada con flexbox, este proyecto me ayudo a afianzar mis conocimentos con flex</p>
+                <p>HTML, CSS</p>
+                </article>
+                <article class="proyect">
+                  <img src="../Proyects/image/grid_web-preview.png" alt="Imagen proyecto web grid">
+                  <h3>Web grid</h3>
+                  <p>Realizado con grid tanto las cartas que es el contenido principal como el layaut</p>
+                  <p>HTML, CSS</p>
+                 </article>
             </div>
-            <div class="content">
-                <h1>Grid layaut</h1>
-                <h2>HTML, CSS</h2>
-                <p>Layaut realizado con grid, que dentro tiene una tarjetas también hechas con grid</p>
+            <a href="" class="button">
+                Ver más proyectos
+            </a>
+        </section>
+
+        <section class="container-tegnologies">
+            <h2>Tecnologías</h2>
+            <ul class="view">
+                <li class="tegnology"><img src="Home Page/svg/css.svg" alt="Icono CSS"></li>
+                <li class="tegnology"><img src="Home Page/svg/django.svg" alt="Icono DJango"></li>
+                <li class="tegnology"><img src="Home Page/svg/html5.svg" alt="Icono HTML5"></li>
+                <li class="tegnology"><img src="Home Page/svg/java.svg" alt="Icono Java"></li>
+                <li class="tegnology"><img src="Home Page/svg/javascript.svg" alt="Icono javascript"></li>
+                <li class="tegnology"><img src="Home Page/svg/MongoDB.svg" alt="Icono MongoDB"></li>
+            </ul>
+        </section>
+        <!-- <section class="container-abautme">
+            <article class="abautme">
+                <div class="content">
+                    <h2>Sobre mí</h2>
+                    <p>Mi pasión por la informática viene desde niño: lo que empezó como curiosidad por el hardware y la programación se convirtió en mi camino profesional. 
+                    Tras una base técnica en Sistemas y Redes, ahora estoy cursando un grado superior de Desarrollo de Aplicaciones Web, donde mi objetivo con todo lo aprendido es crear tecnología intuitiva que aporte un valor real a las personas.</p>
+                </div>
+                 <div class="container-image">
+                    <img src="Home Page/images/abautme.webp" alt="Imagen de un Iván Gómez sentado en su mesa de trabajo">
+                </div>
+            </article>
+        </section>
+        <section class="container-form">
+            <div class="tittle-description">
+                <h2>¡Contáctame!</h2>
+                <p>¿Te gusta lo que ves? Busco un puesto de desarrollador junior en prácticas para unirme a un equipo. ¡Hablemos!</p>
             </div>
-            <div class="action">
-                <a href="Proyects/web-grid/index.html"><h3>Ver</h3><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-        </div>
-          <div class="card">
-            <div class="image">
-                <img src="Proyects/image/grid_web-preview.png" alt="Capture screen of proyect">
-            </div>
-            <div class="content">
-                <h1>Grid layaut</h1>
-                <h2>HTML, CSS</h2>
-                <p>Layaut realizado con grid, que dentro tiene una tarjetas también hechas con grid</p>
-            </div>
-            <div class="action">
-                <a href="Proyects/web-grid/index.html"><h3>Ver</h3><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-        </div>
-    </div>
+            <form action="#" class="form-contact">
+                <label for="nombre">Nombre: </label>
+                <input id="nombre" type="text" placeholder="Nombre">
+                <label for="email">Email: </label>
+                <input id="email" type="email" placeholder="Email">
+                <label for="mensaje">Mensaje: </label>
+                <textarea name="mensaje" id="mensaje" rows="5">Mensaje</textarea>
+                <input id="boton" type="submit" value="Enviar mensaje">
+            </form>
+        </section>
+    </main>
     <footer>
-        <small>&copy; 2025 IvanTech - <a type="email" href="mailto:hola@ivantech.dev">hola@ivantech.dev</a></small>
-    </footer>
+        <div class="copyright">
+             <small>&copy; Iván Gómez. Todos los derechos reservados</small>
+        </div>
+        <div class="socialmedia">
+            <a href="#"><img src="svg/linkedin.svg" alt="Icono LinkedIn"></a>
+            <a href="#"><img src="svg/github.svg" alt="Icono Github"></a>
+            <a href="#"><img src="svg/gmail.svg" alt="Icono Gmail"></a>
+        </div>
+    </footer> -->
+    <h1>En desarrollo...</h1>
 </body>
 </html>
